@@ -57,4 +57,21 @@ public class AddDriverFormController {
             new Alert(Alert.AlertType.WARNING, "Please try again..!\n Fill all data Or Enter correct data format.. ", ButtonType.CLOSE).show();
         }
     }
+
+    public void openHomeFormOnAction(ActionEvent actionEvent) throws IOException {
+        URL resource = getClass().getResource("../view/DashBoardForm.fxml");
+        Parent load = FXMLLoader.load(resource);
+        Stage window = (Stage) addDriverContext.getScene().getWindow();
+        window.setScene(new Scene(load));
+    }
+
+    public void openAboutFormOnAction(ActionEvent actionEvent) {
+    }
+
+    public void openLoginFormOnAction(ActionEvent actionEvent) throws IOException {
+        URL resource = getClass().getResource("../view/LoginForm.fxml");
+        Parent load = FXMLLoader.load(resource);
+        Stage window = (Stage) addDriverContext.getScene().getWindow();
+        window.setScene(new Scene(load));
+    }
 }

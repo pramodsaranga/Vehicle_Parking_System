@@ -49,7 +49,7 @@
       </Label>
       <JFXButton layoutX="1008.0" layoutY="25.0" onAction="#openHomeFormOnAction" prefHeight="38.0" prefWidth="77.0" style="-fx-background-color: #16a085;" text="Home" textFill="WHITE" />
       <JFXButton layoutX="1093.0" layoutY="24.0" onAction="#openAboutFormOnAction" prefHeight="38.0" prefWidth="77.0" style="-fx-background-color: #27ae60;" text="About" textFill="WHITE" />
-      <JFXButton buttonType="RAISED" layoutX="585.0" layoutY="123.0" onAction="#openAddVehicleForm" prefHeight="50.0" prefWidth="214.0" style="-fx-background-color: #2ecc71; -fx-background-radius: 50;" text="Add Vehicle" textFill="WHITE">
+      <JFXButton buttonType="RAISED" layoutX="794.0" layoutY="123.0" onAction="#openAddVehicleForm" prefHeight="50.0" prefWidth="214.0" style="-fx-background-color: #a7308d; -fx-background-radius: 50;" text="Add Vehicle" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -57,7 +57,7 @@
             <Font name="Arial Rounded MT Bold" size="21.0" />
          </font>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="886.0" layoutY="134.0" onAction="#openAddDriverForm" prefHeight="50.0" prefWidth="214.0" style="-fx-background-color: #3498db; -fx-background-radius: 50;" text="Add Driver" textFill="WHITE">
+      <JFXButton buttonType="RAISED" layoutX="549.0" layoutY="123.0" onAction="#openAddDriverForm" prefHeight="50.0" prefWidth="214.0" style="-fx-background-color: #3498db; -fx-background-radius: 50;" text="Add Driver" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -65,21 +65,23 @@
             <Font name="Arial Rounded MT Bold" size="21.0" />
          </font>
       </JFXButton>
-      <AnchorPane fx:id="lodeContext" layoutX="66.0" layoutY="204.0" prefHeight="648.0" prefWidth="1198.0" />
-      <AnchorPane layoutX="21.0" layoutY="108.0" prefHeight="79.0" prefWidth="355.0" style="-fx-background-color: #9b59b6; -fx-background-radius: 50;">
+      <AnchorPane fx:id="lodeContext" layoutX="66.0" layoutY="204.0" prefHeight="648.0" prefWidth="1198.0">
+         <children>
+            <Label layoutX="567.0" layoutY="333.0" prefHeight="153.0" prefWidth="421.0" text="Saman Rice " textFill="#34495e">
+               <font>
+                  <Font name="Blackadder ITC" size="92.0" />
+               </font>
+            </Label>
+            <Label layoutX="710.0" layoutY="447.0" prefHeight="79.0" prefWidth="369.0" text="Vehicle Parking System" textFill="#3b1943">
+               <font>
+                  <Font name="Baskerville Old Face" size="38.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="21.0" layoutY="108.0" prefHeight="79.0" prefWidth="355.0" style="-fx-background-color: #c9506c; -fx-background-radius: 50;">
          <children>
             <ComboBox fx:id="cmbSelect" layoutX="22.0" layoutY="21.0" onAction="#selectOnAction" prefHeight="38.0" prefWidth="312.0" style="-fx-background-color: white;" />
          </children>
       </AnchorPane>
-      <Label layoutX="417.0" layoutY="306.0" prefHeight="153.0" prefWidth="421.0" text="Saman Rice " textFill="#34495e">
-         <font>
-            <Font name="Blackadder ITC" size="92.0" />
-         </font>
-      </Label>
-      <Label layoutX="572.0" layoutY="410.0" prefHeight="79.0" prefWidth="369.0" text="Vehicle Parking System" textFill="#3b1943">
-         <font>
-            <Font name="Baskerville Old Face" size="38.0" />
-         </font>
-      </Label>
    </children>
 </AnchorPane>
