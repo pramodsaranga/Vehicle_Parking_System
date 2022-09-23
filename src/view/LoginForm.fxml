@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginContext" prefHeight="876.0" prefWidth="1311.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="876.0" fitWidth="1311.0" opacity="0.79" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/car.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="237.0" layoutY="75.0" opacity="0.9" prefHeight="616.0" prefWidth="838.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane layoutX="336.0" layoutY="23.0" prefHeight="176.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="178.0" fitWidth="200.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asset/user.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="73.0" layoutY="258.0" prefHeight="28.0" prefWidth="108.0" text="Usre Name">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="73.0" layoutY="329.0" text="Password">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="userName" layoutX="230.0" layoutY="253.0" prefHeight="38.0" prefWidth="457.0" style="-fx-background-color: #bdc3c7;" />
+            <JFXButton buttonType="RAISED" layoutX="223.0" layoutY="453.0" onAction="#backToHomeOnAction" prefHeight="38.0" prefWidth="140.0" style="-fx-background-color: #bdc3c7;" text="Cancel">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="488.0" layoutY="453.0" onAction="#openParkingDetailsForm" prefHeight="38.0" prefWidth="129.0" style="-fx-background-color: #3498db;" text="Login" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <PasswordField fx:id="password" layoutX="231.0" layoutY="324.0" prefHeight="38.0" prefWidth="457.0" style="-fx-background-color: #bdc3c7;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

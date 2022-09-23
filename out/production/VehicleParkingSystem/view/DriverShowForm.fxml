@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="driverShowContext" prefHeight="876.0" prefWidth="1311.0" style="-fx-background-color: #ecf0f1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DriverShowFormController">
+   <children>
+      <ImageView fitHeight="885.0" fitWidth="1311.0" opacity="0.67" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/car.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="-3.0" layoutY="-4.0" opacity="0.88" prefHeight="147.0" prefWidth="374.0" style="-fx-background-color: #e74c3c;">
+         <children>
+            <Label layoutX="13.0" layoutY="20.0" prefHeight="68.0" prefWidth="348.0" text="Saman RICE" textFill="#f39c12">
+               <font>
+                  <Font name="Blackadder ITC" size="56.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="63.0" layoutY="142.0" opacity="0.89" prefHeight="663.0" prefWidth="1176.0" style="-fx-background-color: #ecf0f1;">
+         <children>
+            <Label layoutX="39.0" layoutY="101.0" prefHeight="26.0" prefWidth="150.0" text="Select Vehicle">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="182.0" prefHeight="26.0" prefWidth="150.0" text="Vehicle Type">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="258.0" prefHeight="26.0" prefWidth="101.0" text="Driver">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="19.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmbVehicle" layoutX="194.0" layoutY="95.0" prefHeight="38.0" prefWidth="329.0" style="-fx-background-color: #bdc3c7;" />
+            <ComboBox fx:id="cmbDriver" layoutX="194.0" layoutY="252.0" prefHeight="38.0" prefWidth="329.0" style="-fx-background-color: #bdc3c7;" />
+            <JFXButton fx:id="btnParkVehicle" layoutX="751.0" layoutY="230.0" onAction="#parkVehicleOnAction" prefHeight="38.0" prefWidth="316.0" style="-fx-background-color: #34495e;" text="Park Vehicle" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnOnDelivery" layoutX="751.0" layoutY="314.0" onAction="#OnDeliveryShiftOnAction" prefHeight="38.0" prefWidth="316.0" style="-fx-background-color: #34495e;" text="On Delivery Shift" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="712.0" layoutY="474.0" onAction="#openLoginForm" prefHeight="53.0" prefWidth="394.0" style="-fx-background-color: #16a085;" text="Management Login" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font></JFXButton>
+            <Label fx:id="lblVehicleType" alignment="CENTER" layoutX="194.0" layoutY="183.0" prefHeight="38.0" prefWidth="329.0" style="-fx-background-color: #bdc3c7;" text="                    " textAlignment="JUSTIFY">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <TextField fx:id="txtDate" layoutX="695.0" layoutY="87.0" prefHeight="44.0" prefWidth="186.0" style="-fx-background-color: #bdc3c7;">
+               <font>
+                  <Font name="Algerian" size="20.0" />
+               </font></TextField>
+            <TextField fx:id="txtType" layoutX="878.0" layoutY="87.0" prefHeight="93.0" prefWidth="272.0" style="-fx-background-color: #bdc3c7;">
+               <font>
+                  <Font size="37.0" />
+               </font></TextField>
+            <Label layoutX="129.0" layoutY="372.0" prefHeight="69.0" prefWidth="424.0" style="-fx-background-color: #bdc3c7;" text="       Your Parking Slot Number" textFill="#a42222">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="26.0" />
+               </font></Label>
+            <Label fx:id="lblSlot" alignment="CENTER" layoutX="129.0" layoutY="441.0" prefHeight="187.0" prefWidth="424.0" style="-fx-background-color: #bdc3c7;" text="              " textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Black" size="60.0" />
+               </font></Label>
+            <TextField layoutX="695.0" layoutY="127.0" prefHeight="53.0" prefWidth="186.0" style="-fx-background-color: #bdc3c7;" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="372.0" layoutY="70.0" opacity="0.89" prefHeight="75.0" prefWidth="867.0" style="-fx-background-color: #ecf0f1;" text="        Vehicle   Parking   System" textFill="#2c3e50">
+         <font>
+            <Font name="Algerian" size="37.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
