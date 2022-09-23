@@ -69,4 +69,17 @@ public class ParkingDetailsFormController {
             lodeContext.getChildren().add(load);
         }
     }
+
+    public void openLoginFormOnAction(ActionEvent actionEvent) {
+    }
+
+    public void openHomeFormOnAction(ActionEvent actionEvent) throws IOException {
+        URL resource = getClass().getResource("../view/DashBoardForm.fxml");
+        Parent load = FXMLLoader.load(resource);
+        Stage window = (Stage) parkingDetailsContext.getScene().getWindow();
+        window.setScene(new Scene(load));
+    }
+
+    public void openAboutFormOnAction(ActionEvent actionEvent) {
+    }
 }

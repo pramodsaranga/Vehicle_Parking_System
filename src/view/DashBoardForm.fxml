@@ -34,7 +34,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <JFXButton buttonType="RAISED" layoutX="1185.0" layoutY="19.0" onAction="#openLoginFormOnAction" prefHeight="38.0" prefWidth="121.0" style="-fx-background-color: #34495e;" text="Sign in" textFill="WHITE" />
+      <JFXButton layoutX="1185.0" layoutY="19.0" onAction="#openLoginFormOnAction" prefHeight="38.0" prefWidth="121.0" style="-fx-background-color: #34495e;" text="Sign in" textFill="WHITE" />
       <Label layoutX="98.0" layoutY="5.0" prefHeight="30.0" prefWidth="77.0" text="Rice" textFill="#5ca0d1">
          <font>
             <Font name="Blackadder ITC" size="37.0" />
@@ -70,7 +70,7 @@
             <Font name="Blackadder ITC" size="47.0" />
          </font>
       </Label>
-      <JFXButton buttonType="RAISED" layoutX="1011.0" layoutY="19.0" onAction="#openHomeFormOnAction" prefHeight="38.0" prefWidth="77.0" style="-fx-background-color: #16a085;" text="Home" textFill="WHITE" />
-      <JFXButton buttonType="RAISED" layoutX="1096.0" layoutY="18.0" onAction="#openAboutFormOnAction" prefHeight="38.0" prefWidth="77.0" style="-fx-background-color: #27ae60;" text="About" textFill="WHITE" />
+      <JFXButton layoutX="1011.0" layoutY="19.0" onAction="#openHomeFormOnAction" prefHeight="38.0" prefWidth="77.0" style="-fx-background-color: #16a085;" text="Home" textFill="WHITE" />
+      <JFXButton layoutX="1096.0" layoutY="18.0" onAction="#openAboutFormOnAction" prefHeight="38.0" prefWidth="77.0" style="-fx-background-color: #27ae60;" text="About" textFill="WHITE" />
    </children>
 </AnchorPane>
