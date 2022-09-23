@@ -222,4 +222,21 @@ public class DriverShowFormController {
 
         }catch (Exception e){}
     }
+
+    public void openLoginFormOnAction(ActionEvent actionEvent) throws IOException {
+        URL resource = getClass().getResource("../view/LoginForm.fxml");
+        Parent load = FXMLLoader.load(resource);
+        Stage window = (Stage) driverShowContext.getScene().getWindow();
+        window.setScene(new Scene(load));
+    }
+
+    public void openHomeFormOnAction(ActionEvent actionEvent) throws IOException {
+        URL resource = getClass().getResource("../view/DashBoardForm.fxml");
+        Parent load = FXMLLoader.load(resource);
+        Stage window = (Stage) driverShowContext.getScene().getWindow();
+        window.setScene(new Scene(load));
+    }
+
+    public void openAboutFormOnAction(ActionEvent actionEvent) {
+    }
 }
