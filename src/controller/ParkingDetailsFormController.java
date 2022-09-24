@@ -70,7 +70,11 @@ public class ParkingDetailsFormController {
         }
     }
 
-    public void openLoginFormOnAction(ActionEvent actionEvent) {
+    public void openLoginFormOnAction(ActionEvent actionEvent) throws IOException {
+        URL resource = getClass().getResource("../view/LoginForm.fxml");
+        Parent load = FXMLLoader.load(resource);
+        Stage window = (Stage) parkingDetailsContext.getScene().getWindow();
+        window.setScene(new Scene(load));
     }
 
     public void openHomeFormOnAction(ActionEvent actionEvent) throws IOException {
