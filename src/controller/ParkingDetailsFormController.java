@@ -35,12 +35,6 @@ public class ParkingDetailsFormController {
         cmbSelect.setItems(obList);
     }
 
-    public void backToHomeOnAction(ActionEvent actionEvent) throws IOException {
-        URL resource = getClass().getResource("../view/DriverShowForm.fxml");
-        Parent load = FXMLLoader.load(resource);
-        Stage window = (Stage) parkingDetailsContext.getScene().getWindow();
-        window.setScene(new Scene(load));
-    }
 
     public void openAddVehicleForm(ActionEvent actionEvent) throws IOException {
         URL resource = getClass().getResource("../view/AddVehicleForm.fxml");
