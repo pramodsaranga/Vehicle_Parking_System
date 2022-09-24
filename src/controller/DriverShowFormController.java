@@ -104,14 +104,6 @@ public class DriverShowFormController {
         }
 
 
-
-    public void openLoginForm(ActionEvent actionEvent) throws IOException {
-        URL resource = getClass().getResource("../view/LoginForm.fxml");
-        Parent load = FXMLLoader.load(resource);
-        Stage window = (Stage) driverShowContext.getScene().getWindow();
-        window.setScene(new Scene(load));
-    }
-
     public void parkVehicleOnAction(ActionEvent actionEvent) {
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy - HH:mm aa");
         Date date = new Date();
