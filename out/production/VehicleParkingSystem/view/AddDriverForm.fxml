@@ -109,7 +109,7 @@
                   <Font name="Arial Rounded MT Bold" size="22.0" />
                </font>
             </JFXButton>
-            <JFXButton layoutX="851.0" layoutY="412.0" onAction="#backToHomeOnAction" prefHeight="71.0" prefWidth="223.0" style="-fx-background-color: #e74c3c; -fx-background-radius: 50;" text="Cancle" textFill="WHITE">
+            <JFXButton layoutX="851.0" layoutY="412.0" onAction="#backToHomeOnAction" prefHeight="71.0" prefWidth="223.0" style="-fx-background-color: #e74c3c; -fx-background-radius: 50;" text="Close" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>

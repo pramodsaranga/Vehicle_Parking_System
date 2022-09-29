@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="AboutContext" prefHeight="876.0" prefWidth="1311.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AboutFormController">
+   <children>
+      <ImageView fitHeight="30.0" fitWidth="36.0" layoutX="206.0" layoutY="19.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asset/email.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="256.0" layoutY="17.0" prefHeight="35.0" prefWidth="256.0" text="info@samanricecompany.com">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="30.0" fitWidth="36.0" layoutX="512.0" layoutY="20.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asset/z6.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="553.0" layoutY="17.0" prefHeight="35.0" prefWidth="445.0" text="+94 912 274 186 / +94 912 272 387 / +94 775 268 999">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="1181.0" layoutY="16.0" onAction="#openLoginFormOnAction" prefHeight="38.0" prefWidth="121.0" style="-fx-background-color: #34495e;" text="Sign in" textFill="WHITE" />
+      <Label layoutX="94.0" layoutY="2.0" prefHeight="30.0" prefWidth="77.0" text="Rice" textFill="#5ca0d1">
+         <font>
+            <Font name="Blackadder ITC" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="-15.0" prefHeight="45.0" prefWidth="93.0" text="Saman" textFill="#f55125">
+         <font>
+            <Font name="Blackadder ITC" size="37.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="1007.0" layoutY="16.0" onAction="#openHomeFormOnAction" prefHeight="38.0" prefWidth="77.0" style="-fx-background-color: #16a085;" text="Home" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="1092.0" layoutY="15.0" onAction="#openAboutFormOnAction" prefHeight="38.0" prefWidth="77.0" style="-fx-background-color: #27ae60;" text="About" textFill="WHITE" />
+      <ImageView fitHeight="806.0" fitWidth="1317.0" layoutY="71.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asset/trip.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="37.0" layoutY="88.0" opacity="0.96" prefHeight="773.0" prefWidth="1231.0" style="-fx-background-color: white; -fx-background-radius: 50;" />
+   </children>
+</AnchorPane>
