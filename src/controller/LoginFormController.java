@@ -40,7 +40,6 @@ public class LoginFormController {
             loginContext.getChildren().add(load);
         }
     }
-
     public void openLoginFormOnAction(ActionEvent actionEvent) {
     }
 

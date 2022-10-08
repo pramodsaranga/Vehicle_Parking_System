@@ -6,8 +6,8 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane fx:id="AboutContext" prefHeight="876.0" prefWidth="1311.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AboutFormController">
    <children>
@@ -51,12 +51,83 @@
       </ImageView>
       <AnchorPane layoutX="37.0" layoutY="88.0" opacity="0.96" prefHeight="773.0" prefWidth="1250.0" style="-fx-background-color: white; -fx-background-radius: 50;">
          <children>
-            <Label layoutX="307.0" prefHeight="83.0" prefWidth="637.0" text="Saman Rice Company" textFill="#51c8e0">
+            <Label layoutX="249.0" layoutY="22.0" prefHeight="83.0" prefWidth="637.0" text="Saman Rice Company" textFill="#51c8e0">
                <font>
                   <Font name="Book Antiqua" size="65.0" />
                </font>
             </Label>
-            <Separator layoutX="425.0" layoutY="72.0" prefHeight="0.0" prefWidth="349.0" />
+            <Separator layoutX="352.0" layoutY="113.0" prefHeight="0.0" prefWidth="349.0" />
+            <AnchorPane layoutX="88.0" layoutY="376.0" opacity="0.95" prefHeight="320.0" prefWidth="1009.0" style="-fx-background-color: #16a085; -fx-background-radius: 50;">
+               <children>
+                  <Label layoutX="287.0" layoutY="14.0" prefHeight="60.0" prefWidth="536.0" text="Saman Rice Company.pvt" textFill="WHITE">
+                     <font>
+                        <Font name="Baskerville Old Face" size="51.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="115.0" layoutY="109.0" prefHeight="60.0" prefWidth="140.0" text="Location    :" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="115.0" layoutY="162.0" prefHeight="60.0" prefWidth="140.0" text="Email          :" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="115.0" layoutY="229.0" prefHeight="60.0" prefWidth="147.0" text="Contact     :" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="287.0" layoutY="109.0" prefHeight="60.0" prefWidth="438.0" text="NO:144R ,Mawathgama Road, Galle" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="287.0" layoutY="162.0" prefHeight="60.0" prefWidth="438.0" text="info@samanricecompany.com" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="287.0" layoutY="229.0" prefHeight="60.0" prefWidth="618.0" text="+94 912 274 186 / +94 912 272 387 / +94 775 268 999" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <BorderPane layoutX="21.0" layoutY="116.0" prefHeight="45.0" prefWidth="57.0" style="-fx-background-color: white; -fx-background-radius: 50;">
+                     <center>
+                        <ImageView fitHeight="45.0" fitWidth="44.0" pickOnBounds="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../asset/google-maps.png" />
+                           </image>
+                        </ImageView>
+                     </center>
+                  </BorderPane>
+                  <BorderPane layoutX="21.0" layoutY="176.0" prefHeight="45.0" prefWidth="57.0" style="-fx-background-color: white; -fx-background-radius: 50;">
+                     <center>
+                        <ImageView fitHeight="34.0" fitWidth="27.0" pickOnBounds="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../asset/email.png" />
+                           </image>
+                        </ImageView>
+                     </center>
+                  </BorderPane>
+                  <BorderPane layoutX="21.0" layoutY="236.0" prefHeight="45.0" prefWidth="57.0" style="-fx-background-color: white; -fx-background-radius: 50;">
+                     <center>
+                        <ImageView fitHeight="34.0" fitWidth="27.0" pickOnBounds="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../../../../../../2%20nd%20Semester/ORM/Course%20Work/Sipsewana_Institute_System/src/view/assets/z6.png" />
+                           </image>
+                        </ImageView>
+                     </center>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="247.0" fitWidth="393.0" layoutX="853.0" layoutY="105.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asset/rice_Logo.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </children>
